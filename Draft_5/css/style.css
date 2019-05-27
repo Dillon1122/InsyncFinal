@@ -1,0 +1,115 @@
+html{
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: #FFFFFF;
+  text-align: center;
+  width: 100%;
+}
+#body2{
+  position: relative;
+  top: 10.5rem;
+  background-color: #404040;
+  color: white;
+}
+
+}
+
+/*navigation*/
+.navbar .logo{
+  width: 33%;
+}
+header li{
+  display: inline-block;
+  color: 	#000000;
+  font-size: 1.5rem;
+  text-decoration: underline;
+  margin: 1rem;
+  padding: .5rem;
+}
+header #backwards_list{
+  display: none;
+}
+header a{
+  color: black;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+header a:hover{
+  background-color: #404040;
+  color: #ffffff;
+}
+header{
+  border-bottom: 2px solid black;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  background-color: #ffffff;
+}
+@media (min-width: 1200px) {
+  .navbar .logo {
+    float: left;
+  }
+  header li{
+    float: right;
+    order:
+  }
+}
+
+
+/*The Motto / Slogan*/
+.motto p{
+  font-size: 2rem;
+  padding: 1.5rem;
+  color: white;
+}
+
+
+/*Slideshow*/
+.slideshow img{
+  width: 100%;
+  padding: 2rem 0;
+  height: 60vh;
+}
+
+
+/*Product Pictures*/
+.container img{
+  width: 80%;
+  margin: 7.5%;
+  height: 25rem;
+}
+.container a:hover{
+  color: white;
+}
+
+
+
+/*Footer*/
+footer{
+  background-color: #ffffff;
+  color: #000000
+}
+footer h2{
+  display: inline-block;
+  margin: 5% 5%;
+  font-size: 1.5rem;
+}
+footer a{
+  color: #000000;
+}
+footer a:hover{
+  padding: 1%;
+  color: #FFFFFF;
+  background-color: #404040;
+  border-radius: 1rem;
+}
+
+@media (min-width: 1200px) {
+  #body2 {
+    position: relative;
+    bottom: 80rem;
+  }
+}

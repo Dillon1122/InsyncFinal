@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="C:\Users\vtw14\OneDrive\Desktop\Insync\Draft_12\css\reset.css">
+    <link rel="stylesheet" href="C:\Users\vtw14\OneDrive\Desktop\Insync\Draft_12\header_all.css">
+    <link rel="stylesheet" href="C:\Users\vtw14\OneDrive\Desktop\Insync\Draft_12\css\home.style.css">
+    <meta charset="utf-8">
+    <title>InSync Show Prod. | Home</title>
+  </head>
+  <body>
+
+<!--Notes-->
+<!--Fix About_Page header-->
+<!--Fix footers on all pages (make block elements and change to grey background)-->
+
+    <!--Navigation Bar-->
+    <header class="head">
+        <div class="logo">
+          <img src="resources/logo.jpg" alt="">
+        </div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="events.html">Events</a></li>
+        </ul>
+    </header>
+
+
+    <!--Slideshow-->
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="resources/six.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="resources/two.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="resources/nine.jpg" style="width:100%">
+      </div>
+
+    </div>
+    	<br>
+
+      <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+
+    <script>
+      var slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 4000); // Change image every 2 seconds
+      }
+    </script>
+
+    <!--List2-->
+        <div class="list2">
+          <ul>
+            <li><a href="#Location">Location</a></li>
+            <li><a href="#equipment">Production Equipment</a></li>
+          </ul>
+        </div>
+
+    <!--Product Images-->
+          <div class="row1">
+            <div class="container">
+              <img src="resources/eight.jpg" alt="" class="image">
+              <div class="overlay">
+                <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                      ut labore et dolore magna aliqua. Et sollicitudin ac orci phasellus egestas tellus rutrum tellus. Ut venenatis
+                      tellus in metus vulputate eu scelerisque felis. Ultrices sagittis orci a scelerisque purus semper eget duis at.
+                      Massa placerat duis ultricies lacus sed turpis tincidunt id. Feugiat pretium nibh ipsum consequat nisl vel pretium.
+                      Tempor commodo ullamcorper a lacus. Amet consectetur adipiscing elit pellentesque habitant morbi tristique. <br><a href="about.html">Learn More</a>
+                </div>
+              </div>
+            </div>
+            <div class="container">
+              <img src="resources/seven.jpg" alt="" class="image">
+              <div class="overlay">
+                <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                      ut labore et dolore magna aliqua. Et sollicitudin ac orci phasellus egestas tellus rutrum tellus. Ut venenatis
+                      tellus in metus vulputate eu scelerisque felis. Ultrices sagittis orci a scelerisque purus semper eget duis at.
+                      Massa placerat duis ultricies lacus sed turpis tincidunt id. Feugiat pretium nibh ipsum consequat nisl vel pretium.
+                      Tempor commodo ullamcorper a lacus. Amet consectetur adipiscing elit pellentesque habitant morbi tristique. <br><a href="about.html">Learn More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row2">
+            <div class="container">
+              <img src="resources/five.jpg" alt="" class="image">
+              <div class="overlay">
+                <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                      ut labore et dolore magna aliqua. Et sollicitudin ac orci phasellus egestas tellus rutrum tellus. Ut venenatis
+                      tellus in metus vulputate eu scelerisque felis. Ultrices sagittis orci a scelerisque purus semper eget duis at.
+                      Massa placerat duis ultricies lacus sed turpis tincidunt id. Feugiat pretium nibh ipsum consequat nisl vel pretium.
+                      Tempor commodo ullamcorper a lacus. Amet consectetur adipiscing elit pellentesque habitant morbi tristique. <br><a href="events.html">Learn More</a>
+                </div>
+              </div>
+            </div>
+            <div class="container">
+              <img src="resources/three.jpg" alt="" class="image">
+              <div class="overlay">
+                <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                      ut labore et dolore magna aliqua. Et sollicitudin ac orci phasellus egestas tellus rutrum tellus. Ut venenatis
+                      tellus in metus vulputate eu scelerisque felis. Ultrices sagittis orci a scelerisque purus semper eget duis at.
+                      Massa placerat duis ultricies lacus sed turpis tincidunt id. Feugiat pretium nibh ipsum consequat nisl vel pretium.
+                      Tempor commodo ullamcorper a lacus. Amet consectetur adipiscing elit pellentesque habitant morbi tristique.<br><a href="#equipment">Learn More</a>
+                </div>
+              </div>
+          </div>
+        </div>
+
+        <!--Location-->
+        <div class="location-container" id="Location">
+          <h1 style="font-size: 4rem;">WHERE TO FIND US</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          <div class="location-imgs">
+            <img src="resources/office.jpg" alt="">
+            <img src="resources/office.jpg" alt="">
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+              <br>
+              <hr>
+              <br>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        </div>
+
+
+      <!--Equipment-->
+       <div class="Equipment" id="equipment">
+            <h1>Equipment</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+               nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+               eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <img src="resources/prod1.jpg" alt="">
+              <img src="resources/prod4.jpg" alt="">
+              <img src="resources/prod5.jpg" alt="">
+            <p class="second_paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consectetur a erat nam at lectus
+              urna duis convallis. Luctus accumsan tortor posuere ac ut consequat semper. Viverra adipiscing at in tellus integer feugiat. Consequat semper viverra nam libero
+              justo laoreet sit amet. Magna ac placerat vestibulum lectus mauris ultrices eros in. Nisi lacus sed viverra tellus in hac habitasse platea dictumst. Turpis massa
+              tincidunt dui ut ornare.</p>
+              <img  src="resources/prod6.jpg" alt="">
+              <img  src="resources/prod7.png" alt="">
+              <img  src="resources/prod8.jpg" alt="">
+          </div>
+
+      <!--footer-->
+      <footer>
+        <h2 style="text-dectoration: underline">If you have any further questions feel free to contact us at:</h2>
+        <div class="foot_links">
+          <h3 class="address">3920 W. Sunset Rd. Ste. C Las Vegas, NV 89118</h3>
+          <h3>(702)-555-5555</h3>
+          <h3>Social Media</h3>
+        </div>
+      </footer>
+
+  </body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="C:\Users\vtw14\OneDrive\Desktop\Insync\Draft_11\css\reset.css">
+    <link rel="stylesheet" href="C:\Users\vtw14\OneDrive\Desktop\Insync\Draft_11\css\style.css">
+    <meta charset="utf-8">
+    <title>InSync Show Production | Home</title>
+  </head>
+  <body>
+
+<!--Navigation Bar-->
+    <header>
+      <div class="logo">
+        <img src="C:\Users\vtw14\OneDrive\Desktop\Insync\Draft_10\resources\logo.jpg" alt="">
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="AboutUs.html">About Us</a></li>
+        <li><a href="events.html">Events</a></li>
+      </ul>
+    </header>
+
+<!--Image Slideshow-->
+    <div id="body2">
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <a href="#"><img src="C:\Users\vtw14\OneDrive\Desktop\Insync\Draft_10\resources\2.jpg" style="width:100%"></a>
+          <!--<div class="text">justo donec enim</div>-->
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <a href="#"><img src="C:\Users\vtw14\OneDrive\Desktop\Insync\Draft_10\resources\3.jpg" style="width:100%"></a>
+        <!--  <div class="text">ac felis donec</div>-->
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <a href="#"><img src="C:\Users\vtw14\OneDrive\Desktop\Insync\Draft_10\resources\5.jpg" style="width:100%"></a>
+          <!--<div class="text">a condimentum vitae</div>-->
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        <script>
+          var slideIndex = 1;
+          showSlides(slideIndex);
+
+          function plusSlides(n) {
+            showSlides(slideIndex += n);
+          }
+
+          function currentSlide(n) {
+            showSlides(slideIndex = n);
+          }
+
+          function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+          }
+        </script>
+
+<!--Product Images-->
+      <div class="row1">
+        <div class="container">
+          <img src="C:\Users\vtw14\OneDrive\Desktop\Insync\Draft_10\resources\product.3.jpg" alt="" class="image">
+          <div class="overlay">
+            <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+              ut labore et dolore magna aliqua. Et sollicitudin ac orci phasellus egestas tellus rutrum tellus. Ut venenatis
+              tellus in metus vulputate eu scelerisque felis. Ultrices sagittis orci a scelerisque purus semper eget duis at.
+              Massa placerat duis ultricies lacus sed turpis tincidunt id. Feugiat pretium nibh ipsum consequat nisl vel pretium.
+              Tempor commodo ullamcorper a lacus. Amet consectetur adipiscing elit pellentesque habitant morbi tristique. <br><a href="AboutUs.html">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <img src="C:\Users\vtw14\OneDrive\Desktop\Insync\Draft_10\resources\product.4.jpg" alt="" class="image">
+          <div class="overlay">
+            <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+              ut labore et dolore magna aliqua. Et sollicitudin ac orci phasellus egestas tellus rutrum tellus. Ut venenatis
+              tellus in metus vulputate eu scelerisque felis. Ultrices sagittis orci a scelerisque purus semper eget duis at.
+              Massa placerat duis ultricies lacus sed turpis tincidunt id. Feugiat pretium nibh ipsum consequat nisl vel pretium.
+              Tempor commodo ullamcorper a lacus. Amet consectetur adipiscing elit pellentesque habitant morbi tristique. <br><a href="AboutUs.html">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row2">
+        <div class="container">
+          <img src="C:\Users\vtw14\OneDrive\Desktop\Insync\Draft_10\resources\product.1.jpg" alt="" class="image">
+          <div class="overlay">
+            <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+              ut labore et dolore magna aliqua. Et sollicitudin ac orci phasellus egestas tellus rutrum tellus. Ut venenatis
+              tellus in metus vulputate eu scelerisque felis. Ultrices sagittis orci a scelerisque purus semper eget duis at.
+              Massa placerat duis ultricies lacus sed turpis tincidunt id. Feugiat pretium nibh ipsum consequat nisl vel pretium.
+              Tempor commodo ullamcorper a lacus. Amet consectetur adipiscing elit pellentesque habitant morbi tristique. <br><a href="events.html">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <img src="C:\Users\vtw14\OneDrive\Desktop\Insync\Draft_10\resources\4.jpg" alt="" class="image">
+          <div class="overlay">
+            <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+              ut labore et dolore magna aliqua. Et sollicitudin ac orci phasellus egestas tellus rutrum tellus. Ut venenatis
+              tellus in metus vulputate eu scelerisque felis. Ultrices sagittis orci a scelerisque purus semper eget duis at.
+              Massa placerat duis ultricies lacus sed turpis tincidunt id. Feugiat pretium nibh ipsum consequat nisl vel pretium.
+              Tempor commodo ullamcorper a lacus. Amet consectetur adipiscing elit pellentesque habitant morbi tristique. <br><a href="events.html">Learn More</a>
+            </div>
+          </div>
+      </div>
+
+    <!--footer-->
+        <footer>
+          <ul>
+            <li>3920 W. Sunset Rd. Ste. C<br>Las Vegas, NV 89118</li>
+            <li>(702)-555-5555</li>
+            <li>Social Media</li>
+          </ul>
+        </footer>
+
+
+
+
+
+
+  </body>
+</html>

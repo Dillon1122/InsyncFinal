@@ -1,0 +1,157 @@
+body{
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+
+}
+a:hover{
+  background-color: #D0D0D0;
+  color: #404040;
+  border-radius: 10px;
+}
+a{
+  color: white;
+  padding: .5rem;
+}
+#body2{
+  position: relative;
+  top: 15rem;
+}
+@media only screen and (min-width: 900px) {
+  #body {
+    position: relative;
+    bottom: 2rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #body2 {
+    positition: relative;
+    bottom: 20rem;
+  }
+}
+
+
+nav li{
+  display: inline-block;
+  margin: 1rem;
+  padding: .5rem;
+  text-decoration: underline;
+  font-size: 1.5rem;
+}
+
+.navbar{
+  background-color: #404040;
+  text-align: center;
+  padding: 1.5rem 0;
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+}
+@media only screen and (min-width: 900px) {
+  .navbar {
+    display: inline;
+  }
+  .navbar img{
+    float: left;
+  }
+  .navbar li{
+    float: right;
+    text-transform: rotate(180deg);
+  }
+
+}
+
+.motto section{
+  font-size: 1.08rem;
+  text-align: center;
+  padding: 1rem;
+  background-color: white;
+}
+@media only screen and (min-width: 760px) {
+  .motto section {
+    font-size: 1.6rem;
+    padding: 0 1.5rem;
+    margin: 0;
+  }
+}
+
+.slideshow img{
+  width: 100%;
+  height: 45vh;
+  margin: 1.5rem 0;
+}
+
+@media only screen and (min-width: 760px) {
+  .slideshow img {
+    height: 62vh;
+  }
+}
+
+.products img{
+  width: 70%;
+  margin: 2rem;
+  /*display: flex;*/
+  height: 25rem;
+  display: grid;
+  grid-template: 50% 50% / 50% 50%;
+}
+.one{
+  display: flex;
+  justify-content: center;
+}
+.two{
+  display: flex;
+  justify-content: center;
+}
+.three{
+  display: flex;
+  justify-content: center;
+}
+.four{
+  display: flex;
+  justify-content: center;
+}
+@media only screen and (min-width: 1200px) {
+  .products img {
+    display: grid;
+    grid-template: 50% 50% / 50% 50%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .one {
+    width: 50%;
+    height: 30rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .two {
+    width: 50%;
+    height: 30rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .three {
+    width: 50%;
+    height: 30rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .four {
+    width: 50%;
+    height: 30rem;
+  }
+}
+
+footer{
+  background-color: #404040;
+  text-align: center;
+  padding: 3rem 2rem;
+  position: relative;
+  top: 3rem;
+}
+footer li{
+  display: inline;
+  margin: 3rem 2rem;
+  color: white;
+  font-size: 1.5rem;
+}

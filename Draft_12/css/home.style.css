@@ -1,0 +1,435 @@
+* {box-sizing: border-box}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+html{
+  font-size: 16px;
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  margin: auto;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/*Navigation Bar*/
+.logo img{
+  width: 20%;
+  height: 7rem;
+  margin: 3% 0;
+  border: 2px solid #fff;
+  border-radius: .5rem;
+}
+header{
+  display: block;
+  background-color: #000;
+  color: #fff;
+}
+header li{
+  display: inline-block;
+  margin-bottom: 2rem;
+  margin: 0.5rem;
+  padding: 1.5rem;
+  color: #fff;
+}
+header a{
+  margin: 0.5rem;
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+header a:hover{
+  background-color: #fff;
+  color: #000;
+  border-radius: 1rem;
+}
+
+/*Slideshow*/
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  height: 33rem;
+  overflow: hidden;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  position: relative;
+  margin: 0;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+/*.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}*/
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+/*Prodcut Images*/
+/*image overlay styling*/
+.container{
+  position: relative;
+  width: 85%;
+  margin: 3% auto;
+  height: 29rem;
+  border: 3px solid #fff;
+  border-radius: 8%;
+}
+
+.image {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border-radius: 2rem;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #fff;
+  border-radius: 2rem;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: #000;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.text a{
+  color: #BA8314;
+  text-decoration: none;
+}
+.text a:hover{
+  text-decoration: underline;
+}
+
+
+
+/*Location*/
+.list2{
+  width: 100%;
+  background-color: #fff;
+  position: relative;
+  bottom: 3.2rem;
+}
+.list2 li{
+  display: inline-block;
+  margin-bottom: 2rem;
+  margin: 0.5rem;
+  padding: 1rem 5.25rem;
+  color: #fff;
+  font-size: 1.5rem;
+}
+.list2 li a{
+  color: #000;
+  text-decoration: none;
+}
+.list2 li a:hover{
+  text-decoration: underline;
+}
+.location-container{
+  width: 100%;
+  background-color: #fff;
+  color: #000;
+  padding: 2rem;
+}
+.location-container h1{
+  font-size: 1.5rem;
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 1.5rem;
+}
+.location-container p{
+  width: 90%;
+  font-size: .65rem;
+  margin: 0 auto;
+}
+
+
+/*Equipment*/
+.Equipment{
+  background-color: #000;
+  color: #fff;
+  padding-bottom: 2rem;
+  width: 100%;
+}
+.Equipment h1{
+  margin: 2%;
+  padding-top: 1.5rem;
+  font-size: 3rem;
+  text-decoration: underline;
+  text-align: center;
+}
+.Equipment p{
+  width: 80%;
+  margin: 0 auto;
+  font-size: 1rem;
+  line-height: 2rem;
+}
+.Equipment img{
+  width: 70%;
+  display: block;
+  margin: 1.5rem auto;
+}
+.second_paragraph{
+  padding-top: 2.5rem;
+}
+
+
+/*Footer*/
+footer{
+  position: relative;
+  top: 2.5rem;
+  background-color: #000;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  padding-top: 1rem;
+  border-bottom: 1rem solid #fff;
+}
+footer h3{
+  display: block;
+  margin: 1rem;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+/*Location*/
+.location-container{
+  background-color: #fff;
+  color: #000;
+}
+.location-imgs{
+  width: 100%;
+}
+.location-container p{
+  font-size: 1.5rem;
+}
+.location-imgs img{
+  width: 40%;
+  margin: 2.5%;
+  display: inline;
+}
+hr{
+  width: 40%;
+}
+
+@media (min-width: 900px){
+  .location-container p{
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 61.875rem){ /*990px*/
+  .logo img{
+    float: left;
+    margin: 1rem 0 .75rem 2rem;
+    height: 5rem;
+    width: 10rem;
+    border: none;
+  }
+  header{
+      width: 100%;
+      color: black;
+  }
+  header ul{
+    float: right;
+    position: relative;
+    top: .5rem;
+    font-size: 2rem;
+  }
+  header li{
+    margin: 0;
+  }
+
+  .slideshow-container{
+    height: 35rem;
+  }
+  .container{
+    width: 40%;
+    display: inline-block;
+    margin: 2.5%;
+    font-size: 1rem;
+    height: 18rem;
+  }
+  .list2{
+    border: none;
+    bottom: 1rem;
+  }
+  .row1{
+    width: 100%;
+  }
+  .row2{
+    width: 100%;
+  }
+  .text{
+    top: 40%;
+    font-size: 1rem;
+    width: 90%;
+  }
+  .column{
+    height: 8rem;
+  }
+  footer{
+    border-top: 2px solid #fff;
+    width: 100%;
+  }
+  footer h3{
+    width: 30%;
+    display: inline;
+  }
+  .foot_links{
+    padding: 2rem;
+  }
+  .address{
+    width: 50%;
+  }
+
+  .row1{
+      width: 85%;
+      margin: 0 auto;
+  }
+  .row2{
+      width: 85%;
+      margin: 0 auto;
+  }
+  .location-container p{
+    width: 75%;
+    line-height: 2rem;
+    font-size: 1.1rem;
+  }
+  .Equipment img{
+    width: 27%;
+    margin: 2%;
+    padding: 0;
+    display: inline;
+    height: 13rem;
+  }
+}
+
+@media (min-width: 75rem){/*1200px*/
+  .slideshow-container{
+    height: 43rem;
+  }
+  footer li{
+    margin: 5rem;
+  }
+  .Equipment p{
+    font-size: 1.25rem;
+  }
+  .Equipment img{
+    height: 17rem;
+  }
+  .logo img{
+    height: 6rem;
+  }
+  header ul{
+    top: 1.50rem;
+  }
+}
+
+@media (min-width: 93.75rem){/*1500px*/
+  .slideshow-container{
+    height: 50rem;
+  }
+  .logo img{
+    width: 18%;
+    height: 8rem;
+    margin: 1rem 2rem;
+  }
+  header li{
+    font-size: 5rem;
+  }
+  header ul{
+    top: .4rem;
+  }
+  .text{
+    font-size: 1.4rem;
+  }
+  .container{
+    height: 28rem;
+  }
+  .Equipment p{
+    font-size: 1.5rem;
+  }
+  .location-container p{
+    font-size: 1.5rem;
+    width: 70%;
+  }
+}
+
+@media (min-width: 101.1875rem){/*1619px*/
+  .slideshow-container{
+    height: 57rem;
+  }
+  .text{
+    top: 35%;
+    font-size: 1.8rem;
+  }
+  .Equipment img{
+    height: 20rem;
+  }
+}

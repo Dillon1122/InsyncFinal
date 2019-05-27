@@ -1,0 +1,59 @@
+* {box-sizing: border-box}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+html{
+  font-size: 16px;
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  margin: auto;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.logo img{
+  width: 20%;
+  height: 7rem;
+  margin: 3% 0;
+  border: 2px solid #fff;
+  border-radius: .5rem;
+}
+header{
+  display: block;
+  background-color: #000;
+  color: #fff;
+  position: absolute;
+  z-index: 1;
+}
+header li{
+  display: inline-block;
+  margin-bottom: 2rem;
+  margin: 0.5rem;
+  padding: 1.5rem;
+  color: #fff;
+}
+header a{
+  margin: 0.5rem;
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+header a:hover{
+  background-color: #fff;
+  color: #000;
+  border-radius: 1rem;
+}
+
+.events_img{
+  background-image: url("C:/Users/vtw14/OneDrive/Desktop/Insync/Draft_12/resources/four.jpg");
+  background-size: cover;
+  background-position: center;
+  z-index: 5;
+}
+.events_img h1{
+  font-size: 12rem;
+  padding: 20rem 0;
+
+}

@@ -1,0 +1,87 @@
+* {box-sizing: border-box}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+html{
+  font-size: 16px;
+  width: 100%;
+  background-color: #ffffff;
+  text-align: center;
+  margin: auto;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/*Navigation Bar*/
+.logo img{
+  width: 20%;
+  margin: 3% 0;
+}
+header{
+  display: block;
+}
+header li{
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+header a{
+  margin: 0.5rem;
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  color: #050121;
+}
+
+header a:hover{
+  background-color: #050121;
+  color: #ffffff;
+  border-radius: .9rem;
+}
+
+
+
+/*Body*/
+.body{
+  width: 100%;
+}
+.body img{
+  width: 80%;
+  height: 30rem;
+}
+.body p{
+  font-size: 1rem;
+  width: 80%;
+  margin: 3% auto;
+}
+
+
+@media only screen and (min-width: 61.875rem) {
+  /*header*/
+  .logo img{
+    float: left;
+    margin: 2%;
+  }
+  header ul{
+    float: right;
+    position: relative;
+    top: 4rem;
+  }
+  header{
+    position: fixed;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 5;
+  }
+
+/*body*/
+.body{
+  position: relative;
+  top: 9rem;
+  column-count: 2;
+  font-size: 1.5rem;
+}
+.body h1{
+  font-size: 2.5rem;
+  color: #050121;
+}
+
+
+}

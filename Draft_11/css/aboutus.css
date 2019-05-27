@@ -1,0 +1,204 @@
+* {box-sizing: border-box}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+html{
+  font-size: 16px;
+  width: 100%;
+  background-color: #ffffff;
+  text-align: center;
+  margin: auto;
+  font-family: "Times New Roman", Times, serif;
+  border: 5px solid #ffffff;
+}
+
+/*Navigation Bar*/
+.logo img{
+  width: 20%;
+  margin: 3% 0;
+}
+header{
+  display: block;
+}
+header li{
+  display: inline-block;
+  margin-bottom: 2rem;
+  margin: 0.5rem;
+  padding: 1.5rem;
+}
+header a{
+  margin: 0.5rem;
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  color: #050121;
+}
+
+header a:hover{
+  background-color: #050121;
+  color: #ffffff;
+  border-radius: 1rem;
+}
+
+
+/*Headshot*/
+.headshots{
+  width: 100%;
+  background-color: #847E7E;
+}
+.headshots img{
+  width: 40%;
+  margin: 2.5%;
+  height: 21vh;
+  border-radius: 30%;
+}
+
+
+/*Who We Are*/
+.paragraph h1{
+  font-size: 2rem;
+  text-align: left;
+  padding: 1rem;
+  text-decoration: underline;
+  font-size: 2rem;
+}
+.paragraph{
+  width: 90%;
+  background-color: #fff;
+  margin: 2% auto;
+  line-height: 2rem;
+}
+hr{
+  width: 70%;
+  color: #050121;
+  height: .25rem;
+}
+.paragraph p{
+  font-size: .90rem;
+}
+
+
+/*Meet the Team*/
+.column {
+  width: 75%;
+  margin: 2%;
+  border: 3px solid #050121;
+  display: inline-block;
+}
+.column img{
+  height: 33rem;
+}
+.container{
+  font-size: 1.5rem;
+  padding-bottom: 5%;
+  padding-top: 2%;
+  background-color: #050121;
+  color: #fff;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/*What We Do*/
+.do{
+  background-color: #050121;
+  color: #fff;
+  width: 100%;
+}
+.do p{
+  padding: 0 3% 3% 3%;
+}
+.do h1{
+  padding: 3%;
+  font-size: 2rem;
+  text-align: left;
+}
+
+/*Event Images*/
+.event_img img{
+  width: 45%;
+  border: 2px solid #fff;
+  margin: 2%;
+}
+
+.history h1{
+  width: 85%;
+  font-size: 2rem;
+  text-decoration: underline;
+  margin: 2rem auto;
+  text-align: left;
+}
+.history p{
+  width: 80%;
+  font-size: 1rem;
+  margin: 2% auto;
+  line-height: 2rem;
+}
+.container2 {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+.container2 img {
+  vertical-align: middle;
+}
+.container2 .content {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  padding: 2%;
+}
+.container2 p{
+  font-size: 1rem;
+}
+
+
+/*Footer*/
+footer{
+  position: relative;
+  top: 2.5rem;
+}
+footer li{
+  display: block;
+  margin: 3rem;
+  font-size: 1.5rem;
+}
+
+
+@media (min-width: 61.875rem){ /*990px*/
+  /*.logo img{
+    float: left;
+    padding-left: 2rem;
+    height: 6.5rem;
+    width: 15rem;
+  }
+  header{
+    font-size: 2rem;
+  }
+  header ul{
+    float: right;
+    position: relative;
+    top: 3rem;
+  }
+  .slideshow-container{
+    height: 35rem;
+  }
+  hr{
+    display: none;
+    position: absolute;
+  }
+  #body2{
+    position: relative;
+    top: 8rem;
+  }*/
+  .column{
+    margin: 0;
+    padding: 0;
+    width: 30%;
+    margin-bottom: 16px;
+    display: inline-block;
+
+  }
+}
